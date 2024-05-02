@@ -1,16 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="user-scalable=no">
-        <link rel="icon" href="icon/icon.png" type="image/png">
-        <link rel="apple-touch-icon" href="icon/icon.png">
-        <link rel="stylesheet" type="text/css" href="css/game.css">
-        <title>Get To School 5</title>
-    </head>
-    <body style="background-color: black">
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        #content {
+            width: 70%;
+            background-color: lemonchiffon;
+        }
+
+        .SmallBoxes {
+            width: 40%;
+            background-color: azure;
+            Margin: 10px;
+            text-align: center;
+        }
+
+        .BigBox {
+            Display: flex;
+            justify-content: space-evenly;
+        }
+
+        #content {
+            margin: auto;
+        }
+        .SmallBoxes img{ width:100%;
+        object-fit: contain;}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<h1 style="text-align: center;" id="Header">Header- my webties 5/2/2024</h1>
+
+<body>
+    <div id=content>
+        <div class="BigBox">
+            <div class="SmallBoxes">
+                <h2>About myself</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero odio maiores voluptas sint rerum
+                    ratione autem accusantium ea accusamus omnis aliquam iure, repellat reprehenderit, earum minima quo
+                    doloremque odit nobis.</p>
+            </div>
+            <div class="SmallBoxes"><h2>My game</h2><p><a href="game/gettoschool5/index.html">Link</a> click if you wish to play</p></div>
+        </div>
+    </div>
+    <div id=content>
+        <div class="BigBox">
+            <div class="SmallBoxes"><h2>Good cat</h2><img alt="" style="transform:scalex(-1);"src="img/images.jfif"></div>
+            <div class="SmallBoxes"><h2>Bad cat</h2><img style="filter:invert(100%)"src="img/images.jfif"></div>
+        </div>
+    </div>
+</body>
+
 </html>
