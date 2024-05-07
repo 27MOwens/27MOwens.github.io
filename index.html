@@ -37,10 +37,13 @@
             padding: 10px;
             padding-bottom: 5px;
             text-align: center;
+            width: 700px
         }
 
         #smallleft {
-            width: 40%;
+            width: 100%;
+            display: flex;
+
         }
 
         #bigright {
@@ -48,12 +51,14 @@
             background-color: rgb(58, 142, 216);
             padding: 10px;
             display: flex;
+            justify-content: space-evenly;
         }
 
         #image {
             overflow: auto;
             margin: 10px;
             margin-top: 0px;
+
         }
 
         .heading {
@@ -84,11 +89,18 @@
             margin-left: auto;
             margin-right: auto;
         }
-.smallbox{  background-color: wheat;
+
+        .smallbox {
+            background-color: wheat;
             margin: 10px;
             padding: 10px;
             padding-bottom: 5px;
             text-align: center;
+        }
+
+        #smallright {
+            display: flex;
+width: 100%;
         }
     </style>
 </head>
@@ -96,30 +108,50 @@
 <body>
     <div id="content">
         <h1> Home</h1>
-        <div id="bigbox">
-            <div id="smallleft">
-                <div class="samllbox  allbox">
-                    <h2>About</h2>
-                    <P>Click <a href=/about/about.html>here</a></P>
-                </div>
-                <div class="samllbox allbox">
-                    <h2>Game</h2>
-                    <p>click <a href="/game/gettoschool5/index.html">here</a>
-                    </p>
-                </div></div>
-                <div class="smallbox allbox">
-                    <h2>Images</h2>
-                
+
+        <div id="smallleft">
+            <div class="samllbox">
+                <h2> About me</h2>
+                <P>Click <a href=/about/about.html>here</a></P>
             </div>
-            <div id="bigright" class=allbox>
+            <div class="samllbox">
+                <h2> My Game</h2>
+                <p>click <a href="/game/gettoschool5/index.html">here</a>
+                </p>
+            </div>
+        </div>
+        <div id="smallright">
+            <div class="samllbox">
+                <h2>A summary</h2>
+                <p>You are late too school and you at some point quite a while ago got rather "hairy". You have to get
+                    there with help from friend and foe alike!</p>
+            </div>
+            <div class="samllbox">
+                <h2>Orgins</h2>
+                <p>This website was made in it's entirety due to a school project it took a while. The game was also a
+                    school project but parts of that were even made in my free time</p>
+            </div>
+        </div>
+        <div id="bigbox">
+
+            <div class="smallbox">
+                <h2>Images</h2>
+
+            </div>
+            <div id="bigright">
                 <P><img width="300px" height="150px"
-                        src=https://miro.medium.com/v2/resize:fit:904/1*-LFYmvuebT5aUPNzrt_uQg.jpeg> <br><strong>A image of a
-                    dragon.</strong></P>
+                        src=https://miro.medium.com/v2/resize:fit:904/1*-LFYmvuebT5aUPNzrt_uQg.jpeg> <br><strong>A
+                        image of a
+                        dragon.</strong></P>
 
                 <P><img id="image"
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAiqoNiAVVDOAeS31jY6Oi-A2NUDQeKEhbD7zVEhgt8g&s">
                     <br>A <strong>doberman</strong> wearing <em>spectacles</em>
                 </P>
+                <p><img id=image
+                        src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YLxGsvrWlMPgdjSAZH1NezKL4tuLmk_3oIrErVMdOQ&s>
+                    <br>One could even call him Sturm
+                </p>
             </div>
         </div>
     </div>
